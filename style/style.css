@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-image: linear-gradient(#fff, #ced4da);
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+  padding: 4.8rem;
+}
+
+.main-heading {
+  font-size: 3.6rem;
+  color: #555;
+  font-weight: 700;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+/* Styling the country */
+
+.country,
+.neighbour {
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.2);
+  background-color: #ddd;
+}
+
+.country-image-box {
+  max-width: 32rem;
+}
+
+.country-image {
+  width: 100%;
+}
+
+.country-name {
+  color: #444;
+  font-size: 2.8rem;
+  text-align: center;
+  padding: 1.2rem;
+  font-weight: 700;
+}
+
+.country-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.6rem;
+  padding: 1.2rem;
+  color: #222;
+}
+
+.label {
+  font-weight: 600;
+}
+
+/* Styling the neighbouring country */
+.neighbour {
+  position: relative;
+}
+
+.neighbour-image-box {
+  width: 30rem;
+}
+
+.neighbour-image {
+  width: 100%;
+}
+
+.neighbour-name {
+  color: #666;
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 1.2rem;
+  font-weight: 700;
+}
+
+.neighbour-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.4rem;
+  padding: 1.2rem;
+  color: #222;
+}
+
+.neighbour-label {
+  display: inline-block;
+  position: absolute;
+  z-index: 9999;
+  font-size: 1.4rem;
+  padding: 0.6rem 2.4rem;
+  /* width: 15rem; */
+  background-color: #777;
+  color: #20c997;
+  text-transform: uppercase;
+
+  top: 6%;
+  right: -11%;
+  transform: rotate(45deg);
+}
