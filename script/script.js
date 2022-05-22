@@ -1,4 +1,5 @@
 const parentEl = document.querySelector(".container");
+const form = document.querySelector(".form-country");
 
 // Renders list of countries to choose from
 const chooseCountry = function (countries) {
@@ -110,4 +111,11 @@ const getCountryData = async function (country) {
   }
 };
 
-getCountryData("asdfsa");
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  parentEl.innerHTML = "";
+  const input = document.querySelector(".input-country");
+  getCountryData(input.value);
+  input.value = "";
+  input.blur();
+});
