@@ -11,7 +11,7 @@ html {
 body {
   font-family: "Josefin Sans", sans-serif;
   background-image: linear-gradient(#fff, #ced4da);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* Error message */
@@ -26,7 +26,17 @@ body {
 /* choose country message */
 .choose-box {
   font-size: 2.8rem;
-  margin-top: 20rem;
+  width: 120rem;
+  margin: 20rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choose-box div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .choose-message {
@@ -37,6 +47,8 @@ body {
   color: #555;
   border-bottom: 2px solid #555;
   cursor: pointer;
+  display: inline-block;
+  margin: 1.2rem;
 }
 
 .choose-country:hover {
@@ -97,6 +109,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1.6rem;
 }
 
@@ -135,6 +148,7 @@ body {
   font-size: 1.6rem;
   padding: 1.2rem;
   color: #222;
+  width: 32rem;
 }
 
 .label {
@@ -144,14 +158,18 @@ body {
 /* Styling the neighbouring country */
 .neighbour {
   position: relative;
+  width: 30rem;
+  height: 47rem;
 }
 
 .neighbour-image-box {
   width: 30rem;
+  height: 15rem;
 }
 
 .neighbour-image {
   width: 100%;
+  height: 100%;
 }
 
 .neighbour-name {
@@ -165,9 +183,11 @@ body {
 .neighbour-detail {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
   font-size: 1.4rem;
   padding: 1.2rem;
   color: #222;
+  width: 30rem;
 }
 
 .neighbour-label {
@@ -184,4 +204,9 @@ body {
   top: 6%;
   right: -11%;
   transform: rotate(45deg);
+}
+
+.no-neighbours {
+  font-size: 2.4rem;
+  color: #333;
 }
